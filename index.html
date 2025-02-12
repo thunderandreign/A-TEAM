@@ -26,6 +26,73 @@ text-align: center}
           <!--also add a list of the tasks and subtasks-->
         <h3>Illustration of a form</h3>
         <!--Eria design  form of your choice-->
+        <form action="form.php" method="POST">
+<div>
+<label for"name">Name</label><br>
+<input type="text" id="name" name="name" required>
+<br>
+<label>Gender</label>
+</div>
+<br>
+<input type="radio" id="male" name="gender" value="male">
+<label for="male">Male &#128104;</lable>
+<input type="radio" id="female" name="gender" value="female">
+<label for"female">Female &#128105;</label>
+<br>
+<label for="country">Country</label>
+<br>
+<select id="country" name="country">
+<optgroup label="Eastafrica">
+<option value="uganda">Uganda</option>
+<option value="kenya">Kenya</option>
+</optgroup>
+<optgroup label="Rest of Africa">
+<option value="south Africa">South Africa</option>
+
+<option value="Senegal">Senegal</option>
+
+<option value="Ghana">Ghana</option>
+<optgroup label="Europe">
+
+<option value="Spain">Spain</option>
+
+<option value="Netherlands">Netherlands</option>
+</optroup>
+
+</select>
+<br>
+<label for="bsse">Are you an undergraduate offering BSSE</label>
+<br>
+<input type="checkbox" id="bsse" value="yes" name="bsse">
+<br>
+<label for="message">List the issues you have encountered that need to be worked upon <label>
+<br>
+<textarea id="message" name="feedback" rows="5" columns="10"></textarea>
+<br>
+<label for="hall">Hallof Attachment
+<input list="halls" id="hall" name="hall">
+<datalist id="halls">
+<option value="Livingstone">
+<option value="Africa">
+<option value="Lumumba">
+<option value="Complex">
+<option value="Mitchel">
+</datalist>
+<br>
+<button onclick="showAlert('Thank You')">Click</button>
+<script>
+function showAlert(message){
+alert(message);
+}
+</script>
+<br>
+<input type="reset" value="reset" name="reset">
+<br>
+
+<input type="submit" value="submit">
+
+</form>
+
         <h3>How we feel about Web development</h3>
         <!--Eria put emojis-->
         <!--Mark illustrate Iframes-->
