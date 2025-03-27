@@ -3,23 +3,25 @@ body {
     font-style: italic;
     font-weight: 500;
     font-size: 100%;
-    margin: 40px;
+    margin: 50px;
     padding: 20px;
-    background-color: skyblue;
+    background-color: whitesmoke;
 }
 
 header {
-    background-color: rgb(71, 83, 255);
+    background-color: maroon;
     color: white;
     padding: 20px;
     text-align: center;
+    border-radius: 50px;
+    box-shadow: 10px 15px 20px grey;
 }
 
 .logo {
     float: none;
     max-width: 150px;
-    height: 500;
-    width: 500;
+    height: 100%;
+    width: 100%;
 }
 
 .motto {
@@ -29,7 +31,9 @@ header {
 }
 
 nav {
-    background-color: rgb(135, 71, 255);
+    background-color: maroon;
+    border-radius: 10px;
+    
 }
 
 nav ul {
@@ -62,6 +66,8 @@ nav a:hover {
 
 .slideshow-container {
     position: relative;
+    box-shadow: 10px 20px 30px grey;
+    border-radius: 100px;
     max-width: 100%;
     margin: 0cap;
 }
@@ -99,8 +105,10 @@ nav a:hover {
 }
 
 footer {
+    color: aliceblue;
 text-align: center;
-background-color: aliceblue;
+background-color: maroon;
+border-radius: 10px;
 }
 /* Responsive styles */
 @media (max-width: 600px) {
