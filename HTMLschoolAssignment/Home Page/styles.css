@@ -57,6 +57,7 @@ nav a {
 nav a:hover {
     background-color: maroon;
     border-style: groove;
+    border-radius: 20px;
 }
 
 .content {
