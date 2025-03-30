@@ -60,7 +60,50 @@ color:red;}
 .accordionitemheader.active + .accordionitembody{
 display:block;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+body{
+    margin: 0px;
+    margin-top: 77px;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgb(250, 250, 255);
+}
+.navbar{
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(128, 0, 0);
+}
+.navbar > :nth-child(2){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navbar a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: rgb(128, 0, 0) ;
+    font-size: 20px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.navbar a:hover {
+    background-color: rgb(124, 12, 27);
+}
+.active{
+    text-decoration: underline !important;
+}
+.navbar img{
+    width: 60px;
+    padding: 10px;
+}
 
 
 
