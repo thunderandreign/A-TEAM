@@ -22,7 +22,7 @@
     <a href="contact.html">Contact Us</a>
     </div>
 </div>
-  <div class="container">
+
     <!-- Hero Section -->
     <section class="hero">
       <h1 >Welcome to Mengo Senior School</h1>
@@ -79,7 +79,6 @@ The formal opening of this school was performed by His Majesty’s Acting Commis
 
     <!-- Mission & Vision -->
     <section class="mission-vision">
-      <div class="MissionVisionCoreValues">
         <div class="card1">
         <h3>Our Mission</h3>
         <p>To Provide Quality Education through Practical skills, Teamwork, Self-reliance and God fearing persons</p>
@@ -92,7 +91,6 @@ The formal opening of this school was performed by His Majesty’s Acting Commis
         <h3>Core Values</h3>
         <p>Fearing God, Respect of Person & Property, Integrity</p>
         </div>
-      </div>
     </section>
 
     <!-- Our Team -->
@@ -151,28 +149,8 @@ The formal opening of this school was performed by His Majesty’s Acting Commis
       <h2>Join Our Learning Community</h2>
       <p>Start your child’s journey with us today.</p>
       <a href="#contact" class="btn">Contact Us</a>
-      <a href="#admissions" class="btn outline">Admissions Info</a>
+      <a href="/HTMLschoolAssignment/Admission/admissions.html" class="btn outline">Admissions Info</a>
     </section>
   </div>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const counters = document.querySelectorAll("[data-target]");
-      counters.forEach(counter => {
-        const updateCount = () => {
-          const target = +counter.getAttribute("data-target");
-          const current = +counter.innerText;
-          const increment = target / 100;
-
-          if (current < target) {
-            counter.innerText = Math.ceil(current + increment);
-            setTimeout(updateCount, 20);
-          } else {
-            counter.innerText = target;
-          }
-        };
-        updateCount();
-      });
-    });
-  </script>
 </body>
 </html>
