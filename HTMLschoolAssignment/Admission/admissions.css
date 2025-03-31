@@ -1,0 +1,75 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fafb;
+    color: #333;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: maroon;
+    padding: 10px 20px;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .navbar a.active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: maroon;
+    color: white;
+  }
+  
+  .admissions-details, .requirements {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admissions-details h2, .requirements h2 {
+    color: maroon;
+  }
+  
+  .admissions-details ol, .requirements ul {
+    margin: 10px 0;
+    padding-left: 20px;
+  }
+  
+  .admissions-details li, .requirements li {
+    margin: 5px 0;
+  }
+  
+  .cta {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #e0f2fe;
+    border-radius: 8px;
+    margin: 20px auto;
+  }
+  
+  .cta .btn {
+    background-color: maroon;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .cta .btn:hover {
+    background-color: #a00000;
+  }

@@ -1,4 +1,5 @@
 /* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
@@ -60,6 +61,9 @@ body {
     margin-top: 40px;
     flex-wrap: wrap;
   }
+<<<<<<< HEAD
+
+=======
   
   .card {
     color: white;
@@ -88,6 +92,7 @@ body {
     margin-bottom: 10px;
   }
   
+>>>>>>> 5a0807fdf644ab00547e6ce79ded12a8985587dd
   .achievements {
     display: flex;
     justify-content: space-around;
@@ -142,4 +147,111 @@ body {
     border: 2px solid #0284c7;
     color: #0284c7;
   }
+<<<<<<< HEAD
+  .team-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
   
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  
+  .card .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .card h4 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .card p {
+    margin: 5px 0 0;
+    font-size: 14px;
+  }
+
+body{
+    margin: 0px;
+    margin-top: 77px;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgb(250, 250, 255);
+}
+.navbar{
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(128, 0, 0);
+}
+.navbar > :nth-child(2){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navbar a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: rgb(128, 0, 0) ;
+    font-size: 20px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.navbar a:hover {
+    background-color: rgb(124, 12, 27);
+}
+.active{
+    text-decoration: underline !important;
+}
+.navbar img{
+    width: 60px;
+    padding: 10px;
+}
+.mission-vision {
+  display: flex; /* Use Flexbox for horizontal alignment */
+  gap: 5px; /* Add spacing between the cards */
+  justify-content: center; /* Center the cards horizontally */
+  align-items: stretch; /* Ensure all cards have the same height */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.card1 {
+  background-color: rgb(247, 220, 220);
+  flex: 1; /* Allow cards to grow and take equal space */
+  min-width: 250px; /* Set a minimum width for responsiveness */
+  max-width: 300px; /* Optional: Limit the maximum width */
+  padding: 20px;
+  border-radius: 0px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+=======
+  
+>>>>>>> 5a0807fdf644ab00547e6ce79ded12a8985587dd
