@@ -106,10 +106,19 @@ nav a:hover {
 }
 
 footer {
-    color: aliceblue;
+    color: black;
 text-align: center;
-background-color: maroon;
 border-radius: 10px;
+}
+
+/*dark mode*/
+.dark-mode {
+    background-color: grey;
+    color: white;
+}
+
+.dark-mode nav ul li a {
+    color: azure;
 }
 /* Responsive styles */
 @media (max-width: 600px) {

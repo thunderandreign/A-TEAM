@@ -1,5 +1,5 @@
-let slideIndex = 0;
-showSlides();
+ let slideIndex = 0;
+ showSlides();
 
 function showSlides() {
     let slides = document.getElementsByClassName("slides");
@@ -16,3 +16,11 @@ function changeSlide(n) {
     slideIndex += n - 1;
     showSlides();
 }
+
+ //Dark mode toggle
+ document.addEventListener("DOMContentLoaded", function() {
+ const darkModeToggle=document.getElementById("dark-mode-toggle");
+ darkModeToggle.addEventListener("click", function() {
+    document.body.classList.toggle("dark-mode");
+ });
+});
