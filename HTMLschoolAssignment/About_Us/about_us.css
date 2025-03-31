@@ -14,9 +14,10 @@ body {
   }
   
   .hero {
+    color: white;
     text-align: center;
     padding: 60px 20px;
-    background: #e0f2fe;
+    background: maroon;
     border-radius: 16px;
   }
   
@@ -61,7 +62,8 @@ body {
   }
   
   .card {
-    background: white;
+    color: white;
+    background: maroon;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -117,9 +119,10 @@ body {
   }
   
   .cta {
+    color: white;
     text-align: center;
     padding: 40px 20px;
-    background: #e0f2fe;
+    background: maroon;
     border-radius: 16px;
     margin-top: 40px;
   }
