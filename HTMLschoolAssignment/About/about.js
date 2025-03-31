@@ -27,3 +27,4 @@ document.addEventListener('DOMContentLoaded', function () {
     alert("Thank you for reaching out!");
     return true;
   }
+
