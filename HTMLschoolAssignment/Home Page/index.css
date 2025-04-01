@@ -159,3 +159,29 @@ body.dark-mode .mode-toggle {
     background-color: #ffffff;
     color: #121212;
 }
+header {
+    position: relative; /* Allows positioning of child elements */
+    background-color: maroon;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 40px 0px 40px 0px;
+    box-shadow: 10px 15px 20px grey;
+}
+
+.mode-toggle {
+    position: absolute; /* Position the button relative to the header */
+    top: 10px; /* Distance from the top of the header */
+    right: 20px; /* Distance from the right edge of the header */
+    background-color: maroon;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.mode-toggle:hover {
+    background-color: #a00000;
+}
