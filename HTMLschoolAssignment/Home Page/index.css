@@ -30,6 +30,10 @@ header {
     font-size: 1.5em;
 }
 
+.active{
+    text-decoration: overline;
+}
+
 nav {
     background-color: maroon;
     border-radius: 10px;
