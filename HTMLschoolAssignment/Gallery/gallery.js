@@ -7,7 +7,6 @@ const closeBtn = document.getElementById('closeBtn');
 galleryItems.forEach(item => {
     item.addEventListener('click', () => {
         const img = item.querySelector('img');
-        const caption = item.querySelector('p').textContent;
         // Set the lightbox image source and caption
         lightboxImg.src = img.src;
         // Show the lightbox

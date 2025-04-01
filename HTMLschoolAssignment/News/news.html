@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="/HTMLschoolAssignment/Galley/School images/mengo.jpg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Events</title>
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+    <!--Navigation bar begins-->
+    <div class="navbar">
+        <div>
+            <img src="/HTMLschoolAssignment/Gallery/School images/mengo.jpg" alt="School-logo">
+        </div>
+        <div>
+        <a href="/HTMLschoolAssignment/Home Page/index.html">Home</a>
+        <a href="/HTMLschoolAssignment/About/About.html">About Us</a>
+        <a href="/HTMLschoolAssignment/Academics Page/academics.html">Academics</a>
+        <a class="active" href="/HTMLschoolAssignment/News/news.html">News and Events</a>
+        <a href="/HTMLschoolAssignment/Gallery/gallery.html">Gallery</a>
+        <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+    <!--Navigation bar begins-->
+    <div class="event-container">
+        <div class="calendar-section">
+            <h1>Upcoming Events</h1>
+            <div class="calendar">
+                <div>
+                    <span id="currentDate"></span>
+                    <div>
+                        <img onclick="changeMonth(-1)" src="/HTMLschoolAssignment/Gallery/School images/left-circle-1-svgrepo-com.svg" alt="left" >
+                        <button onclick="todayDate()">Today</button>
+                        <img onclick="changeMonth(1)" src="/HTMLschoolAssignment/Gallery/School images/right-circle-1-svgrepo-com.svg" alt="right" >
+                    </div>
+                </div>
+                <div id="calendar">
+                </div>
+                <div id="events-box" class="events-box"></div>
+            </div>
+        </div>
+        <div>
+            <h1>Trending News</h1>
+            <div class="trending-articles">
+                <img src="/HTMLschoolAssignment/Gallery/School images/mengo4.JPG" alt="">
+                <div>
+                    <h3>New School Protectorate Elected</h3>
+                    <p>A new group of student leaders has been elected to the Student Council! 
+                        Congratulations to Emily, Jake, and their team for their success in the election. 
+                        We look forward to seeing how they will make a positive impact on our school community.</p>
+                    <a href="#">Read More</a>
+                </div>
+
+            </div>
+            <div class="trending-articles">
+                <img src="/HTMLschoolAssignment/Gallery/School images/mengo5.jpeg" alt="">
+                <div>
+                    <h3>School Soccer Team Scores Big</h3>
+                    <p>The school soccer team had an impressive victory this week, 
+                        winning their match 4-1 against Riverview School. The team’s hard work and teamwork were on full display, 
+                        with standout performances from Marco and Sara. The next match is on Friday—good luck, team!</p>
+                    <a href="#">Read More</a>
+                </div>
+
+            </div>
+            <div class="trending-articles">
+                <img src="/HTMLschoolAssignment/Gallery/School images/mengo1.jpg" alt="">
+                <div>
+                    <h3>School Garden Gets a Green Makeover</h3>
+                    <p>The school’s garden is looking more vibrant than ever thanks to a group of dedicated volunteers. 
+                        Students and staff worked together to plant new flowers, vegetables, and herbs. 
+                        The garden is now a beautiful, sustainable space for learning and relaxation.</p>
+                    <a href="#">Read More</a>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+    <div class="news-container">
+        <h1>Other News</h1>
+        <div>
+            <div>
+                <div>
+                    <h2>Students Hosts Successful Fundraiser</h2>
+                    <p>
+                        The Student Council raised over Ush 5m for a local children's hospital through a bake sale, 
+                        silent auction, and fun activities.
+                    </p>
+                </div>
+                <button>Read More</button>
+            </div>
+            <div>
+                <div>
+                    <h2>Talent Show: Students Showcase Amazing Skills</h2>
+                    <p>
+                        The Annual Talent Show highlighted student performances, from singing and dancing to comedy and 
+                        magic tricks.
+                    </p>
+                </div>
+                <button>Read More</button>
+            </div>
+            <div>
+                <div>
+                    <h2>Dual Enrollment Program with Local University</h2>
+                    <p>
+                        Seniors can now take college-level courses through a new partnership with Green Valley University, 
+                        earning both high school and college credit.
+                    </p>
+                </div>
+                <button>Read More</button>
+            </div>
+        </div>
+    </div>
+    <div class="contact-form">
+        <div>
+        <form action="">
+            <table>
+                <tr>
+                    <td><label for="type">Type</label></td>
+                </tr>
+                <tr>
+                    <td><input list="list" type="text" placeholder="News or Event"></td>
+                    <datalist id="list">
+                        <option value="News">
+                        <option value="Event">
+                    </datalist>
+                </tr>
+                <tr>
+                    <td><label for="title">Title</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="description">Description</label></td>
+                </tr>
+                <tr>
+                    <td><textarea name="" id=""></textarea></td>
+                </tr>
+                <tr>
+                    <td><button type="submit">Submit</button></td>
+                </tr>
+            </table>
+  
+        </form>
+        </div>  
+    </div>
+    <footer>
+        &copy;2025 Mengo Senior School. All rights reserved.   
+    </footer>
+</body>
+<script src="news.js"></script>
+</html>

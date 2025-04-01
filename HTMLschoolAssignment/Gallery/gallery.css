@@ -33,7 +33,7 @@ body{
     text-align: center;
 }
 .navbar a:hover {
-    background-color: rgb(124, 12, 27);
+    background-color: rgb(100,0,0);
 }
 .active{
     text-decoration: underline !important;
@@ -47,7 +47,7 @@ footer{
     width: 100%;
     height: 50px;
     background-color: rgb(124, 12, 27);
-    font-size: 25px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
