@@ -126,3 +126,36 @@ border-radius: 10px;
         flex-direction: column;
     }
 }
+/* General styles for the mode toggle button */
+.mode-toggle {
+    background-color: maroon;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.mode-toggle:hover {
+    background-color: #a00000;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode nav {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode a {
+    color: #ffffff;
+}
+
+body.dark-mode .mode-toggle {
+    background-color: #ffffff;
+    color: #121212;
+}
