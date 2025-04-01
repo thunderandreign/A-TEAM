@@ -61,9 +61,6 @@ body {
     margin-top: 40px;
     flex-wrap: wrap;
   }
-<<<<<<< HEAD
-
-=======
   
   .card {
     color: white;
@@ -92,7 +89,6 @@ body {
     margin-bottom: 10px;
   }
   
->>>>>>> 5a0807fdf644ab00547e6ce79ded12a8985587dd
   .achievements {
     display: flex;
     justify-content: space-around;
@@ -147,7 +143,6 @@ body {
     border: 2px solid #0284c7;
     color: #0284c7;
   }
-<<<<<<< HEAD
   .team-grid {
     display: flex;
     gap: 20px;
@@ -252,6 +247,3 @@ body{
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
-=======
-  
->>>>>>> 5a0807fdf644ab00547e6ce79ded12a8985587dd
