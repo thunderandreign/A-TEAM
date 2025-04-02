@@ -30,8 +30,8 @@ header {
     font-size: 1.5em;
 }
 
-.active{
-    text-decoration: overline;
+.active {
+    text-decoration: underline !important;
 }
 
 nav {
