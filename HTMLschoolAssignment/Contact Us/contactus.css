@@ -48,7 +48,8 @@ body {
 }
 
 a {
-    color: green;
+    color: white;
+    word-spacing: normal;
     font-size: 18px;
 }
 
@@ -231,32 +232,3 @@ input{
     display: flex;
 
 }
-
-/*.cta {
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-    background: maroon;
-    border-radius: 16px;
-    margin-top: 40px;
-  }
-
-.btn {
-    background-color: #0284c7;
-    color: white;
-    padding: 10px 16px;
-    border-radius: 8px;
-    text-decoration: none;
-    margin: 5px;
-    display: inline-block;
-  }
-  
-  .btn.outline {
-    background: transparent;
-    border: 2px solid #0284c7;
-    color: #0284c7;
-  }
-
-  footer {
-    text-align: center;
-  }*/
