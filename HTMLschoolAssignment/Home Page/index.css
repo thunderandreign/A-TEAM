@@ -124,6 +124,7 @@ nav a:hover {
 
 #content {
     overflow: auto;
+    color: black;
 }
 
 #headtr{
