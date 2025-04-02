@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+body{
+    margin: 0px;
+    margin-top: 77px;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgb(250, 250, 255);
+}
+.navbar{
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(128, 0, 0);
+}
+.navbar > :nth-child(2){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navbar a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: rgb(128, 0, 0) ;
+    font-size: 20px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.navbar a:hover {
+    background-color: rgb(100,0,0);
+}
+.active{
+    text-decoration: underline !important;
+}
+.navbar img{
+    width: 60px;
+    padding: 10px;
+}
+/*Footer*/
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(128, 0, 0);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+
+/*News & Events*/
+.event-container{
+    display: flex;
+    flex-direction: row;
+
+}
+.event-container>div{
+    padding: 20px;
+}
+.event-container h1{
+    text-align: center;
+}
+.event-container>div:nth-child(1){
+    height: 600px;
+    width: 100%;
+    gap: 5px;
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+}
+.trending-articles{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem
+}
+.trending-articles img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.trending-articles h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.trending-articles p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+}
+
+.trending-articles a {
+    color: rgb(128, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.trending-articles a:hover {
+    text-decoration: underline;
+}
+.event-container>div:nth-child(2){
+    height: 600px;
+    width: 100%;
+}
+/*calendar*/
+.calendar{
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+.calendar>div:nth-child(1){
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.calendar>div:nth-child(1)>span{
+    margin-left: 20px;
+    font-size: 20px;
+}
+.calendar>div:nth-child(1)>div{ 
+    display: inherit;
+    margin-right: 20px;
+}
+.calendar button{
+    font-size: inherit;
+    font-family: inherit;
+    background-color: rgb(128, 0, 0);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    border: 0;
+}
+.calendar>div:nth-child(2){
+    height: 20%;
+}
+.calendar>div:nth-child(2){
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    height: 80%;
+}
+#calendar{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    overflow: hidden;
+}
+#calendar div{
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    height:40px;
+    background-color: rgba(128, 0, 0, 0.1);
+}
+.calendar-days{
+    border: 0 !important;
+    text-align: center;
+    height: max-content !important;
+    color: rgb(255, 255, 255);
+    background-color: rgba(128, 0, 0,0.9) !important;
+}
+.calendar-events{
+    background-color: rgba(128, 0, 0, 0.5) !important;
+}
+.today{
+    background-color: rgba(128, 0, 0,0.9) !important;
+}
+.calendar img{ 
+    width: 30px;
+}
+.events-box {
+    display: none;
+    position: relative;
+    background-color: rgb(128, 0, 0);
+    color: #ffff;
+    padding: 20px;
+    z-index: 1000;
+    width: max-content;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.7);
+}
+.events-box.show {
+    display: block;
+    animation: popupFade 0.3s ease forwards;
+}
+.events-box::after {
+    content: '';
+    position: absolute;
+    top: -16px;
+    left: 20px;
+    border: 8px solid transparent;
+    border-bottom-color: rgb(128, 0, 0);
+}
+.events-box ul {
+    margin: 0;
+}
+.events-box h3{
+    margin: 0;
+    margin-top: 10px;
+}
+@keyframes popupFade {
+    from {
+        opacity: 0;
+        transform: scale(0.8) translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+/*News*/
+.news-container{
+    display: flex;
+    flex-direction: column;
+}
+.news-container h1{
+    text-align: center;
+}
+.news-container>div{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+}
+.news-container>div>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 20px;
+    height: 300px;
+    border-radius: 5px;
+    color: rgb(207, 199, 199);
+    background-color:rgba(128, 0, 0, 0.2);
+    background-blend-mode: soft-light;
+}
+.news-container>div>div:nth-child(1){
+    background-image: url(mengo10.jpg);
+}
+.news-container>div>div:nth-child(2){
+    background-image: url(mengo9.jpg);
+}
+.news-container>div>div:nth-child(3){
+    background-image: url(mengo8.jpg);
+}
+.news-container button{
+    width: 100px;
+    padding: 10px;
+    background: none;
+    border: 1px solid rgb(0, 0, 0);
+}
+.news-container button:hover{
+    border: 0;
+    color: rgb(255, 255, 255);
+    background-color: rgb(100, 0, 0);
+}
+
+.contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form div{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    padding: 50px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.281)
+}
+.contact-form div input,textarea{
+    width: 99%;
+    height: 40px;
+    padding: 2px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    outline: 0px;
+
+}
+.contact-form div input:focus{
+    border: 2px solid rgb(100, 0, 0);
+    border-radius: 2px;
+}
+.contact-form button{
+    width: 100%;    
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(128, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+    border: 0;
+}
+.contact-form button:hover{
+    background-color: rgb(100, 0, 0);
+    font-weight: bolder;
+}
+.contact-form div table{
+    width: 100%;
+}
