@@ -10,6 +10,13 @@ body {
     max-height: 100vh;
     position: relative;  
 }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: maroon;
+    padding: 10px 20px;
+}
   .contactus {
     display: flex;
     flex-direction: column;
