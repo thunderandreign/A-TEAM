@@ -24,6 +24,10 @@ body {
     font-weight: bold;
     text-decoration: underline;
   }
+  .navbar img{
+    width: 60px;
+    padding: 10px;
+}
   
   .hero {
     text-align: center;
